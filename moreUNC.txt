@@ -1704,3 +1704,4 @@ syn.protect_gui(ClipboardUI)
 print('Done adding functions!')
 QueueGetIdentity()
 getgenv().MoreUNC = true
+
