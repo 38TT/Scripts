@@ -7,6 +7,7 @@ pcall(function() getgenv().IY_LOADED = true end)
 
 local cloneref = cloneref or function(o) return o end
 Players = cloneref(game:GetService("Players"))
+COREGUI = game.Players.LocalPlayer.PlayerGui
 
 if not game:IsLoaded() then
 	local notLoaded = Instance.new("Message")
@@ -12657,5 +12658,4 @@ task.spawn(function()
 	Credits:Destroy()
 	IntroBackground:Destroy()
 	minimizeHolder()
-	if IsOnMobile then notify("Unstable Device", "On mobile, Infinite Yield may have issues or features that are not functioning correctly.") end
 end)
